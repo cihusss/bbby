@@ -1,4 +1,4 @@
-console.log(parent.document);
+// console.log(parent.document);
 
 var iframeID = window.frameElement.id;
 
