@@ -1,9 +1,26 @@
 // console.log(parent.document);
 
-var iframeID = window.frameElement.id;
+var iframeID;
 
-parent.document.getElementById(iframeID).style.height = 'auto';
-parent.document.getElementById(iframeID).style.width = '100%';
+if (self !== top) {
+
+  iframeID = window.frameElement.id;
+  // iframeID = 'bbby';
+  parent.document.getElementById(iframeID).style.height = 'auto';
+  parent.document.getElementById(iframeID).style.width = '100%';
+  // parent.parent.document.getElementById(iframeID).style.height = 'auto';
+  // parent.parent.document.getElementById(iframeID).style.width = '100%';
+
+}
+
+function resizeIframes () {
+
+  if (self !== top) {
+
+    parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+    parent.parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+  }
+}
 
 window.addEventListener("resize", styleAd);
 
@@ -30,7 +47,8 @@ function styleAd(event) {
     case (wrapperWidth < 480):
       wrapperHeight = Math.round(wrapperWidth * .4);
       document.getElementById("ad").style.height = wrapperHeight + "px";
-      parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+      // parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+      resizeIframes();
       
       document.getElementById("headline").style.fontSize = "14px";
       document.getElementById("left").style.padding = "1rem 1.5rem";
@@ -39,7 +57,8 @@ function styleAd(event) {
     case (wrapperWidth < 768 && wrapperWidth > 480):
       wrapperHeight = Math.round(wrapperWidth * .2);
       document.getElementById("ad").style.height = wrapperHeight + "px";
-      parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+      // parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+      resizeIframes();
       
       document.getElementById("headline").style.fontSize = "14px";
       document.getElementById("left").style.padding = "1rem 1.5rem";
@@ -51,7 +70,8 @@ function styleAd(event) {
     case (wrapperWidth > 768 && wrapperWidth < 1100):
       wrapperHeight = Math.round(wrapperWidth * .15);
       document.getElementById("ad").style.height = wrapperHeight + "px";
-      parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+      // parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+      resizeIframes();
       
       document.getElementById("headline").style.fontSize = "18px";
       document.getElementById("left").style.padding = "1rem 1.5rem";
@@ -60,7 +80,8 @@ function styleAd(event) {
     case (wrapperWidth > 1100 && wrapperWidth < 1281):
       wrapperHeight = Math.round(wrapperWidth * .1);
       document.getElementById("ad").style.height = wrapperHeight + "px";
-      parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+      // parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
+      resizeIframes();
       
       document.getElementById("headline").style.fontSize = "23px";
       document.getElementById("left").style.padding = "1rem 1.5rem";
