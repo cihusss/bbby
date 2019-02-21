@@ -1,4 +1,4 @@
-##For implementation in Google Ad Manager use this:
+## For implementation in Google Ad Manager use this:
 
 <script type="text/javascript">
 	var url = 'https://cihusss.github.io/bbby/10-1/ad.html';
