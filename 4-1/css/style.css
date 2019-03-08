@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+body, html {
+  height: 100%;
+  padding: 1rem;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#ad {
+  box-sizing: border-box;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1282px;
+/*   min-width: 417px; */
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  height: 404px;
+}
+
+#left {
+  box-sizing: border-box;
+  background: #f7f7f7;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  padding: 2rem 2.5rem;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#right {
+  box-sizing: border-box;
+  background: red;
+  height: 100%;
+  width: 60%;
+  background: url(https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#headwrap {
+  flex: 1 0 auto;
+}
+
+#headline {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  color: black;
+}
+#subhead {
+  background: white;
+  padding: .5rem;
+}
+
+#dimensions {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  background: black;
+  font-size: 2rem;
+  padding: .25rem .5rem 
+}
+
+#cta {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.arrow {
+  width: 20px;
+  color: #003bde;
+  margin: 0 0 -5px 5px;
+}
+
+#logo {
+  width: 3rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+#button {
+  background: #003bde;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+/*   margin: 2rem 0; */
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#button:hover {
+  background: #04f;
+  transition: .5s;
+}
