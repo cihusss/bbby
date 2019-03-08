@@ -7,10 +7,10 @@ if (self !== top) {
   // iframeID = window.frameElement.id;
   iframeID = "google_ads_iframe_/38091560/BBB/Search_1"
   // iframeID = 'bbby';
-  parent.document.getElementById(iframeID).style.height = 'auto';
-  parent.document.getElementById(iframeID).style.width = '100%';
-  // parent.parent.document.getElementById(iframeID).style.height = 'auto';
-  // parent.parent.document.getElementById(iframeID).style.width = '100%';
+  // parent.document.getElementById(iframeID).style.height = 'auto';
+  // parent.document.getElementById(iframeID).style.width = '100%';
+  parent.parent.document.getElementById(iframeID).style.height = 'auto';
+  parent.parent.document.getElementById(iframeID).style.width = '100%';
 
 }
 
