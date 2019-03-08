@@ -3,24 +3,24 @@
 
 var iframeID;
 
-// if (self !== top) {
+if (self !== top) {
 
-  iframeID = window.frameElement.id;
+  iframeID = window.window.frameElement.id;
   // iframeID = 'bbby';
   parent.document.getElementById(iframeID).style.height = 'auto';
   parent.document.getElementById(iframeID).style.width = '100%';
   // parent.parent.document.getElementById(iframeID).style.height = 'auto';
   // parent.parent.document.getElementById(iframeID).style.width = '100%';
 
-// }
+}
 
 function resizeIframes () {
 
-  // if (self !== top) {
+  if (self !== top) {
 
     parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
     parent.parent.document.getElementById(iframeID).style.height = wrapperHeight + "px";
-  // }
+  }
 }
 
 window.addEventListener("resize", styleAd);
