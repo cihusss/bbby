@@ -5,7 +5,7 @@ var iframeID;
 
 if (self !== top) {
 
-  iframeID = window.window.frameElement.id;
+  iframeID = window.frameElement.id;
   // iframeID = 'bbby';
   parent.document.getElementById(iframeID).style.height = 'auto';
   parent.document.getElementById(iframeID).style.width = '100%';
