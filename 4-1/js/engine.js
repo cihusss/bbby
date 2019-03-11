@@ -58,7 +58,7 @@ function styleAd(event) {
       document.getElementById("left").style.width = "40%";
       document.getElementById("right").style.width = "60%";
       document.getElementById("ad").style.height = "306px";
-      document.getElementById("headline").style.fontSize = "18px";
+      document.getElementById("headline").style.fontSize = "14px";
       break;
         
     case (wrapperWidth > 700 && wrapperWidth < 768 ):
